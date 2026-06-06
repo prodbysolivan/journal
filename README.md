@@ -18,7 +18,6 @@ You can add this project to your Deno project using the following command:
 
 ```bash
 deno add @prodbysolivan/journal
-
 ```
 
 ### Quick Usage
