@@ -97,6 +97,7 @@ export class Handler implements Disposable {
     if (this._disposed) return;
     this._onEnabledChanged.dispose();
     this._onHandle.dispose();
+    this.journal.removeFromHandlers(this);
     this._onDispose.fire();
     this._onDispose.dispose();
   }
