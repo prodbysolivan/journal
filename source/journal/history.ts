@@ -22,10 +22,10 @@ export class History implements Disposable {
   // #endregion
 
   // Signals
-  private _onLimitChanged = new Signal<[number]>();
-  private _onEnabledChanged = new Signal<[boolean]>();
-  private _onPush = new Signal<[Message]>();
-  private _onClear = new Signal<[]>();
+  private _onLimitChanged: Signal<[number]> = new Signal();
+  private _onEnabledChanged: Signal<[boolean]> = new Signal();
+  private _onPush: Signal<[Message]> = new Signal();
+  private _onClear: Signal<[]> = new Signal();
   // #endregion
 
   /**

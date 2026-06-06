@@ -31,9 +31,9 @@ export class Handler implements Disposable {
   // #endregion
 
   // #region Signals
-  private _onEnabledChanged = new Signal<[boolean]>();
-  protected _onHandle = new Signal<[Message]>();
-  protected _onDispose = new Signal<[]>();
+  private _onEnabledChanged: Signal<[boolean]> = new Signal();
+  protected _onHandle: Signal<[Message]> = new Signal();
+  protected _onDispose: Signal<[]> = new Signal();
   // #endregion
 
   /**

@@ -23,9 +23,9 @@ export class Journal {
   // #endregion
 
   // #region Signals
-  private _onWrite = new Signal<[Message]>();
-  private _onHandlerAdded = new Signal<[Handler]>();
-  private _onHandlerRemoved = new Signal<[Handler]>();
+  private _onWrite: Signal<[Message]> = new Signal();
+  private _onHandlerAdded: Signal<[Handler]> = new Signal();
+  private _onHandlerRemoved: Signal<[Handler]> = new Signal();
   // #endregion
 
   /**
