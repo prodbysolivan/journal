@@ -1,10 +1,10 @@
 # Journal
 
-A lightweight journaling system designed for modularity and seamless message observability.
+Journaling system designed for modularity and seamless message observability.
 
 ## Description
 
-Journal is an architecture-focused library designed to manage message flows and application history. By utilizing a robust Signal-based system, it decouples the message producers from the consumers, allowing you to "plug in" custom handlers—such as console loggers, file systems, or remote API exporters—without modifying the core logic. It solves the problem of rigid, tightly-coupled logging by treating every action as an observable event, making it the perfect foundation for sophisticated debugging and observability tools.
+A modular architecture-focused library designed to manage message flows and application history built with Typescript. By utilizing a robust Signal-based system, it decouples the message producers from the consumers, allowing you to "plug in" custom handlers—such as console loggers, file systems, or remote API exporters—without modifying the core logic. It solves the problem of rigid, tightly-coupled logging by treating every action as an observable event, making it the perfect foundation for sophisticated debugging and observability tools.
 
 ### Dependencies
 
@@ -14,7 +14,7 @@ Journal is an architecture-focused library designed to manage message flows and 
 
 ### Installing
 
-You can add this project to your Deno project using the following command:
+You can add this project to your Deno pro:
 
 ```bash
 deno add @prodbysolivan/journal
@@ -22,7 +22,7 @@ deno add @prodbysolivan/journal
 
 ### Quick Usage
 
-The core philosophy is simple: initialize the journal, create a handler, and connect it to the stream.
+Import the `Journal` class and a `Handler` into your project:
 
 ```typescript
 import { Journal } from "@prodbysolivan/journal";
