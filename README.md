@@ -61,5 +61,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgments
 
-* [Prodbysolivan Signal library](https://www.google.com/search?q=https://jsr.io/%40prodbysolivan/signal)
-* The open-source community for constant inspiration on event-driven architectures.
+- [Deno Documentation](https://www.google.com/search?q=https%3A%2F%2Fdocs.deno.com%2F)
+- [TypeScript Handbook](https://www.google.com/search?q=https%3A%2F%2Fwww.typescriptlang.org%2Fdocs%2F)
