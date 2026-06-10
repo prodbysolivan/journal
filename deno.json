@@ -1,7 +1,7 @@
 {
   "name": "@prodbysolivan/journal",
   "description": "A lightweight journaling system designed for modularity and seamless message observability.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "exports": "./source/index.ts",
   "publish": {
     "include": ["source/**/*.ts", "deno.json", "README.md", "LICENSE"]
