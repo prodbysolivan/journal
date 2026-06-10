@@ -4,7 +4,13 @@ Journaling system designed for modularity and seamless message observability.
 
 ## Description
 
-A modular architecture-focused library designed to manage message flows and application history built for TypeScript. By utilizing a robust Signal-based system, it decouples the message producers from the consumers, allowing you to "plug in" custom handlers—such as console loggers, file systems, or remote API exporters—without modifying the core logic. It solves the problem of rigid, tightly-coupled logging by treating every action as an observable event, making it the perfect foundation for sophisticated debugging and observability tools.
+A modular architecture-focused library designed to manage message flows and
+application history built for TypeScript. By utilizing a robust Signal-based
+system, it decouples the message producers from the consumers, allowing you to
+"plug in" custom handlers—such as console loggers, file systems, or remote API
+exporters—without modifying the core logic. It solves the problem of rigid,
+tightly-coupled logging by treating every action as an observable event, making
+it the perfect foundation for sophisticated debugging and observability tools.
 
 ### Dependencies
 
@@ -38,16 +44,20 @@ journal.addToHandlers(logger);
 journal.write({
   content: "System initialized successfully",
   level: "info",
-  sender: "Core"
+  sender: "Core",
 });
-
 ```
 
 ## Help
 
-* **Handling Duplicates**: Ensure you do not manually call `super.handle(message)` if you are observing the `onHandle` signal, as this will trigger a feedback loop.
-* **Memory Management**: Always call `journal.dispose()` or `handler.dispose()` when your components are destroyed to prevent memory leaks and clear active Signal subscriptions.
-* **Missing Data**: If logs aren't appearing, verify that your handler's `enabled` property is set to `true`.
+- **Handling Duplicates**: Ensure you do not manually call
+  `super.handle(message)` if you are observing the `onHandle` signal, as this
+  will trigger a feedback loop.
+- **Memory Management**: Always call `journal.dispose()` or `handler.dispose()`
+  when your components are destroyed to prevent memory leaks and clear active
+  Signal subscriptions.
+- **Missing Data**: If logs aren't appearing, verify that your handler's
+  `enabled` property is set to `true`.
 
 ## Authors
 
@@ -57,7 +67,8 @@ Solivan (prodbysolivan)
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the LICENSE file for
+details.
 
 ## Acknowledgments
 
