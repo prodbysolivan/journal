@@ -4,7 +4,7 @@ Journaling system designed for modularity and seamless message observability.
 
 ## Description
 
-A modular architecture-focused library designed to manage message flows and application history built with Typescript. By utilizing a robust Signal-based system, it decouples the message producers from the consumers, allowing you to "plug in" custom handlers—such as console loggers, file systems, or remote API exporters—without modifying the core logic. It solves the problem of rigid, tightly-coupled logging by treating every action as an observable event, making it the perfect foundation for sophisticated debugging and observability tools.
+A modular architecture-focused library designed to manage message flows and application history built for TypeScript. By utilizing a robust Signal-based system, it decouples the message producers from the consumers, allowing you to "plug in" custom handlers—such as console loggers, file systems, or remote API exporters—without modifying the core logic. It solves the problem of rigid, tightly-coupled logging by treating every action as an observable event, making it the perfect foundation for sophisticated debugging and observability tools.
 
 ### Dependencies
 
@@ -14,7 +14,7 @@ A modular architecture-focused library designed to manage message flows and appl
 
 ### Installing
 
-You can add this project to your Deno pro:
+Add the package to your project directly via JSR:
 
 ```bash
 deno add @prodbysolivan/journal
