@@ -17,6 +17,7 @@ it the perfect foundation for sophisticated debugging and observability tools.
 - Deno 1.40 or higher
 - [@prodbysolivan/types](https://jsr.io/@prodbysolivan/types)
 - [@prodbysolivan/signal](https://jsr.io/@prodbysolivan/signal)
+- [@prodbysolivan/history](https://jsr.io/@prodbysolivan/history)
 
 ### Installing
 
