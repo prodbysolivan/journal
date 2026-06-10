@@ -1,6 +1,6 @@
 import { assertEquals, assertThrows } from "@std/assert";
-import { Journal } from "../../source/journal/journal.ts";
-import { Handler } from "../../source/journal/handler.ts";
+import { Journal } from "../../source/index.ts";
+import { Handler } from "../../source/index.ts";
 
 Deno.test("Journal handler registration", () => {
   const journal = new Journal({});

@@ -1,6 +1,6 @@
 import { assert, assertEquals } from "@std/assert";
-import { Handler } from "../../source/journal/handler.ts";
-import { Journal } from "../../source/journal/journal.ts";
+import { Handler } from "../../source/index.ts";
+import { Journal } from "../../source/index.ts";
 
 Deno.test("Handler lifecycle and enabling", () => {
   const journal = new Journal({});
