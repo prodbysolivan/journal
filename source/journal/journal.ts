@@ -1,8 +1,7 @@
 import { type ReadonlySignal, Signal } from "@prodbysolivan/signal";
 import type { Handler } from "./handler.ts";
 import type { Message } from "../common/types/message.ts";
-import { History } from "./history.ts";
-import type { HistorySettings } from "./history.ts";
+import { History, type HistorySettings } from "@prodbysolivan/history";
 
 /**
  * Settings for the Journal core system.
@@ -19,7 +18,7 @@ export class Journal {
   // #region Lifecycle
   private _handlers: Handler[] = [];
   /** The history for storing messages. */
-  public history: History;
+  public history: History<Message>;
   // #endregion
 
   // #region Signals
