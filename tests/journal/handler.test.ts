@@ -11,7 +11,7 @@ Deno.test("Handler lifecycle and enabling", () => {
   assertEquals(handler.enabled, false);
 });
 
-Deno.test("Handler handles message when enabled", () => {
+Deno.test("Handler handles message when enabled", async () => {
   const journal = new Journal({});
   const handler = new Handler({ journal, name: "Test" });
   let received = false;
@@ -19,7 +19,7 @@ Deno.test("Handler handles message when enabled", () => {
   handler.onHandle.connect(() => {
     received = true;
   });
-  handler.handle({ content: "test", level: "info" });
+  await handler.handle({ content: "test", level: "info" });
 
   assert(received);
 });

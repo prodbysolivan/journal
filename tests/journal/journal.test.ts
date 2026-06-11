@@ -12,7 +12,7 @@ Deno.test("Journal handler registration", () => {
   assertThrows(() => journal.addToHandlers(handler));
 });
 
-Deno.test("Journal routing to handlers", () => {
+Deno.test("Journal routing to handlers", async () => {
   const journal = new Journal({});
   const handler = new Handler({ journal, name: "Test" });
   let count = 0;
@@ -20,6 +20,6 @@ Deno.test("Journal routing to handlers", () => {
   handler.onHandle.connect(() => count++);
   journal.addToHandlers(handler);
 
-  journal.write({ content: "hi", level: "info" });
+  await journal.write({ content: "hi", level: "info" });
   assertEquals(count, 1);
 });
