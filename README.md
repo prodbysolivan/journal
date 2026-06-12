@@ -32,8 +32,7 @@ deno add @prodbysolivan/journal
 Import the `Journal` class and a `Handler` into your project:
 
 ```typescript
-import { Journal } from "@prodbysolivan/journal";
-import { ConsoleHandler } from "@prodbysolivan/journal/handlers";
+import { Journal, ConsoleHandler } from "@prodbysolivan/journal";
 
 const journal = new Journal({ historySettings: { limit: 100 } });
 
