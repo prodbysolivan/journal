@@ -1,5 +1,7 @@
 # Journal
 
+![Deno](https://img.shields.io/badge/deno-1.40%2B-black?logo=deno) [![JSR](https://jsr.io/badges/@prodbysolivan/journal)](https://jsr.io/@prodbysolivan/journal) ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+
 > Journaling system designed for modularity and seamless message observability.
 
 ## Description
