@@ -33,17 +33,14 @@ import { Journal, ConsoleHandler } from "@prodbysolivan/journal";
 
 const journal = new Journal({ historySettings: { limit: 100 } });
 
-// Registering a handler
 const logger = new ConsoleHandler({ journal, name: "AppLogger" });
 journal.addToHandlers(logger);
 
-// Dispatching a message
 journal.write({
   content: "System initialized successfully",
   level: "info",
   sender: "Core",
 });
-
 ```
 
 ## Documentation & Help
